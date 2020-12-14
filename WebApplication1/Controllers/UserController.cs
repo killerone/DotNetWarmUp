@@ -50,7 +50,6 @@ namespace WebApplication1.Controllers
         {
             if (id == null)
                 return NotFound();
-
             var user = this.userService.Get(id);
             if (user == null)
                 return NotFound();
@@ -60,31 +59,48 @@ namespace WebApplication1.Controllers
         // POST: UserController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(string id, User user)
         {
-            try
+            if (id != user.UserId)
+                return NotFound();
+            
+            if (ModelState.IsValid)
             {
+                this.userService.Update(id, user);
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+
+            return View(user);
         }
 
         // GET: UserController/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(string id)
         {
-            return View();
+            if (id == null)
+                return NotFound();
+
+            var user = this.userService.Get(id);
+            if (user == null)
+                return NotFound();
+
+            return View(user);
         }
 
         // POST: UserController/Delete/5
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult ConfirmDelete(string id)
         {
             try
             {
+
+                var user = this.userService.Get(id);
+
+                if (id == null)
+                    return NotFound();
+
+                this.userService.Remove(id);
+
                 return RedirectToAction(nameof(Index));
             }
             catch

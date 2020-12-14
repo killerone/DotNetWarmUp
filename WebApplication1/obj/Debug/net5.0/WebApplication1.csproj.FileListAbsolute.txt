@@ -413,3 +413,4 @@ C:\Users\HIMANSHU\source\repos\WebApplication1\WebApplication1\bin\Debug\net5.0\
 C:\Users\HIMANSHU\source\repos\WebApplication1\WebApplication1\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
 C:\Users\HIMANSHU\source\repos\WebApplication1\WebApplication1\obj\Debug\net5.0\Razor\Views\User\Create.cshtml.g.cs
 C:\Users\HIMANSHU\source\repos\WebApplication1\WebApplication1\obj\Debug\net5.0\Razor\Views\User\Edit.cshtml.g.cs
+C:\Users\HIMANSHU\source\repos\WebApplication1\WebApplication1\obj\Debug\net5.0\Razor\Views\User\Delete.cshtml.g.cs
