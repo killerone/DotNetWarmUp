@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="row mt-5 px-3">
+    <div class="col-5 mt-5">
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="row">
+                <div class="col-5">Date of birth</div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" class="form-control" id="phoneNumber">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary submit">ADD</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-warning submit">CLEAR</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col">
+        <button class="btn btn-info">Refresh</button>
+        <table class="table mt-2">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">City</th>
+                    <th scope="col">DoB</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td scope="col">Himanshu Pednekar</td>
+                    <td scope="col">himanshupednekar036@email.com</td>
+                    <td scope="col">1234567890</td>
+                    <td scope="col">Mumbai</td>
+                    <td scope="col">5th Jan 2020</td>
+                    <td scope="col">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Update</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Delete</a>
+                            </div>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
