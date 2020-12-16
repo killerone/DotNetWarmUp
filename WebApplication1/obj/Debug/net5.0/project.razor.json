@@ -15603,6 +15603,11 @@
   "RootNamespace": "WebApplication1",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\HIMANSHU\\source\\repos\\WebApplication1\\WebApplication1\\Views\\User\\Create.cshtml",
+      "TargetPath": "Views\\User\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\HIMANSHU\\source\\repos\\WebApplication1\\WebApplication1\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -15633,8 +15638,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\HIMANSHU\\source\\repos\\WebApplication1\\WebApplication1\\Views\\User\\Index.cshtml",
+      "TargetPath": "Views\\User\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\HIMANSHU\\source\\repos\\WebApplication1\\WebApplication1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HIMANSHU\\source\\repos\\WebApplication1\\WebApplication1\\Views\\User\\Edit.cshtml",
+      "TargetPath": "Views\\User\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HIMANSHU\\source\\repos\\WebApplication1\\WebApplication1\\Views\\User\\Delete.cshtml",
+      "TargetPath": "Views\\User\\Delete.cshtml",
       "FileKind": "mvc"
     }
   ],

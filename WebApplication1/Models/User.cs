@@ -11,15 +11,16 @@ namespace WebApplication1.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public String UserId { get; set; }
-        
+
         [BsonElement("Name")]
         [Required]
-        public string  Name { get; set; }
-       
+        public string Name { get; set; }
+
         [BsonElement("DateOfBirth")]
+        [DataType(DataType.Date)]
         [Required]
         public DateTime DateOfBirth { get; set; }
-       
+
         [BsonElement("PhoneNumber")]
         [Required]
         public int PhoneNumber { get; set; }
