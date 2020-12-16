@@ -50,9 +50,11 @@ namespace WebApplication1.Controllers
         {
             if (id == null)
                 return NotFound();
+          
             var user = this.userService.Get(id);
             if (user == null)
                 return NotFound();
+           
             return View(user);
         }
 
@@ -61,6 +63,7 @@ namespace WebApplication1.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(string id, User user)
         {
+
             if (id != user.UserId)
                 return NotFound();
             

@@ -35,6 +35,7 @@ namespace WebApplication1.Services
         
         public void Update(string id, User newUser)
         {
+            
             users.ReplaceOne(user => user.UserId == id, newUser);
         }
       
