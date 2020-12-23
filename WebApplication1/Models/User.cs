@@ -13,24 +13,27 @@ namespace WebApplication1.Models
         public String UserId { get; set; }
 
         [BsonElement("Name")]
-        [Required]
+        [Required(ErrorMessage ="* Required")]
         public string Name { get; set; }
 
         [BsonElement("DateOfBirth")]
         [DataType(DataType.Date)]
-        [Required]
+        [Required(ErrorMessage = "* Required")]
+        [_18YearOldValidation]
         public DateTime DateOfBirth { get; set; }
 
         [BsonElement("PhoneNumber")]
-        [Required]
+        [Required(ErrorMessage = "* Required")]
+        [RegularExpression(@"^(\d{10})$", ErrorMessage = "Wrong mobile")]
         public int PhoneNumber { get; set; }
 
         [BsonElement("City")]
-        [Required]
+        [Required(ErrorMessage = "* Required")]
         public String City { get; set; }
 
         [BsonElement("Email")]
-        [Required]
+        [Required(ErrorMessage = "* Required")]
+        [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "E-mail is not valid")]
         public String Email { get; set; }
     }
 }

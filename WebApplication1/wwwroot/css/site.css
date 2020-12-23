@@ -79,3 +79,7 @@ a.editdelete {
   color: white;
   font-weight: 700;
 }
+
+.input-validation-error {
+  border: 2px solid red;
+}

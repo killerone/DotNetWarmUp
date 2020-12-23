@@ -63,7 +63,8 @@ namespace WebApplication1.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(string id, User user)
         {
-            user.UserId = id;
+            if (id != user.UserId)
+                return NotFound();
             
             if (ModelState.IsValid)
             {
@@ -109,5 +110,6 @@ namespace WebApplication1.Controllers
                 return View();
             }
         }
+     
     }
 }
