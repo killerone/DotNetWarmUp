@@ -5,16 +5,16 @@
 #### Here are some sample snapshots of the web application
 
 1. **Home Page**
-   ![Homepage](Images\\Home.JPG)
+   ![Homepage](https://github.com/killerone/DotNetWarmUp/blob/master/Images/Home.JPG)
 
 2. **Create User**
-   ![Homepage](Images\\Create.JPG)
+   ![Homepage](https://github.com/killerone/DotNetWarmUp/blob/master/Images/Create.JPG)
 
 3. **Validations**
-   ![Homepage](Images\\Validations.JPG)
+   ![Homepage](https://github.com/killerone/DotNetWarmUp/blob/master/Images/Validations.JPG)
 
 4. **Update**
-   ![Homepage](Images\\Update.JPG)
+   ![Homepage](https://github.com/killerone/DotNetWarmUp/blob/master/Images/Update.JPG)
 
 5. **Delete**
-   ![Homepage](Images\\Delete.JPG)
+   ![Homepage](https://github.com/killerone/DotNetWarmUp/blob/master/Images/Delete.JPG)
